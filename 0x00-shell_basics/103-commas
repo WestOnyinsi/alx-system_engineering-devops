@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1 | grep -v "^\." | sort -f | sed 's/\/$//g' | sed 's/$/,/' | tr "\n" " " | head -c -2; echo
